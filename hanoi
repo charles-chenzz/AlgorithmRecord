@@ -1,0 +1,10 @@
+def hanoi(n, a, b, c):  
+  if n > 0:  
+    hanoi(n-1, a, c, b)
+    print('moving item from %s to %s ' % (a, c))
+    hanoi(n-1, b, a, c)
+    
+hanoi(3, 'A', 'B', 'C')
+
+# 递归思想 将要移动的盘子分成两堆 然后将n-1个从a经过c移动到b
+# 再将a移动到c 最后将n-1个在b的盘子经过a移动到c完成任务
