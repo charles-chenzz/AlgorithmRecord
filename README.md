@@ -1,0 +1,2 @@
+# AlgorithmRecord
+leetcode
